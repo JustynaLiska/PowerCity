@@ -13,17 +13,32 @@
   p {
     font-family: Roboto, sans-serif !important;
     font-size: 16px !important;
+    font-weight: 300;
   }
 
-  h2, h3{
+  h1, h2, h3, h5{
     font-family: Roboto, sans-serif !important;
-    font-weight: 500 !important;
   }
 
   h1{
-      font-size: 52px !important;
-      font-weight: 700 !important;
+    font-size: 52px !important;
+    font-weight: 700 !important;
   }
+
+  h2{
+    font-weight: 500 !important;
+    font-size: 30px !important;
+  }
+
+  h3{
+    font-weight: 500 !important;
+  }
+
+  h6{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+
 
 
 
@@ -152,7 +167,7 @@
   hr{
     bottom: 0.5px solid rgb(172, 171, 171);
     opacity: 0.8;
-    margin: 0 -24px 0 -24px !important;
+    margin: 5px -24px 15px 0px !important;
   }
 
   .navbar .search-container {
@@ -228,7 +243,7 @@
 
 /* SHOP BY CATEGORY */
 
-.shop_by_cat {
+.shop_by_cat_heading {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -242,16 +257,17 @@
     padding: 3% 25% 0 25%;
 }
 
-.rooms {
+.shop_by_cat_content {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
     /* margin: 1%; */
     text-align: center;
+    margin-bottom: 5%;
 }
 
-.rooms a{
+.shop_by_cat_content a{
     margin: 0;
     padding: 0;
 }
@@ -284,7 +300,136 @@
 .imgTitle h2{
     color: white;
     margin: 8%;
-    font-size: 28px;
     line-height: 116%;
+}
+
+
+
+
+
+
+
+
+
+
+/* OUR SERVICES */
+
+.our_services_content, .our_services_heading{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+    background: #F7F7F7;
+}
+
+.icons{
+    position: relative;
+    width: 20%;
+    margin: 2% 2%;
+}
+
+/* .icons img{
+    width: 100px;
+    height: auto;
+} */
+
+
+
+
+
+
+
+
+
+/* VIEW YOUR TRANSACTION */
+
+.transaction_form{
+    margin: 5% 10%;
+}
+
+.transaction_form input{
+    width: 350px;
+    height: 40px;
+}
+
+.transactions_heading{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("assets/logo-sign.svg");
+}
+
+.transactions_heading button{
+    color: white;
+    background: #EF4236;
+    width: 150px;
+    height: 35px;
+    font-size: 1.3em;
+    padding-top: 3px;
+    font-family: Roboto;
     font-weight: 500;
+    margin: -3.5% 0 5% 10%;
+}
+
+.transactions_heading button:hover{
+    background: rgb(211, 52, 40);
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    border-top: solid 1px #C4C4C4;
+}
+
+.footer-child{
+    /* width: 10em; */
+    margin-left: 5%;
+    margin-top: 2%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.footer-child-img{
+    width: 90px;
+    padding-top: 1em;
+    display: inline-block;
+    margin: 2% 3% 0 10%;
+}
+
+.footer-child a{
+    text-decoration: none;
+    /* margin-left: 0%; */
+}
+
+.footer-child a:hover{
+    text-decoration: underline;
+}
+
+.footer-child li{
+    list-style-type:none;
+    line-height: 2em;
+}
+
+.TCs{
+    color: rgb(187, 187, 187);
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin: 2%;
+    text-align: center;
 }
