@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
 
     <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,8 +11,8 @@
             <link href="style.css" rel="stylesheet" media="screen" type="text/css"> 
             <!-- Here I pull the icons from: -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <!-- This is my JS links: -->
-            <script type="text/javascript" src="javascript.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
 
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
@@ -23,150 +24,196 @@
 
             <a href="index.html"> <img class="logo" src="assets/logo.svg" alt="Home"></a>
 
+            <div class="cart">
+                    <button type="button">
+                            <i class="fa fa-shopping-basket"></i>
+                    </button>
+            </div>
+
+            <div class="search-container">
+                    <form action="#">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+            </div>
+
+            <!-- <button class="hamburger">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+            </button> -->
+
+
+            <!-- MOBILE NAVIGATION -->
+
+            <div class="topnav">
+
+                
+                <div id="myLinks">
+                  <a href="#new-arrivals" style="color:#EF4236;">New Arrivals</a>
+                  <a href="#promotions" style="color:#EF4236;">Promotions</a>
+                  <a href="#digital">Digital Devices & Accessories</a>
+                  <a href="#kitchen">Kitchen Devices & Accessories</a>
+                  <a href="#cleaning">Washing & Cleaning Devices</a>
+                  <a href="#beauty">Beauty Devices</a>
+                  <a href="#lightning">Lightning Accessories</a>
+                  <a href="#smart-home">Smart Home Devices</a>
+                  <a href="#heating-cooling">Heating & Cooling Devices</a>
+                  <a href="#power">Power Supplies & Extensions</a>
+                  <a href="#other">Other Devices</a>
+                  
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+
+            </div>
+
+
+
+
+
+
+
+
             <div class="navbar">
+                 
+                <ul> 
 
-                    <div class="cart">
-                        <button type="button">
-                                <i class="fa fa-shopping-basket"></i>
-                        </button>
-                    </div>
-
-                    <div class="search-container">
-                            <form action="#">
-                                  <input type="text" placeholder="Search.." name="search">
-                                  <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                    </div>
-
-                    <a href="#contact">Contact</a>
-                    <a href="#opening">Opening Times</a>
-                    <a href="#transactions">View Transaction</a>
+                    <li> <a class="nav-item" href="#contact">Contact</a> </li>
+                    <li> <a class="nav-item" href="#opening">Opening Times</a> </li>
+                    <li> <a class="nav-item" href="#transactions">View Transaction</a> </li>
 
                     <div class="dropdown">
             
-                      <button class="dropbtn">Products 
+                      <li> <a class="dropbtn">Products 
                         <i class="fa fa-caret-down"></i>
-                      </button>
+                      </a> </li>
+
+                        <!-- NAVIGAION DROP-DOWN COLUMNS -->
+                        <div class="dropdown-content">
             
-                      <!-- NAVIGAION DROP-DOWN COLUMNS -->
-                      <div class="dropdown-content">
-            
-                        <div class="row"> 
-            
-                        <div class="column">
-                            <h3>TV & MEDIA UNITS</h3>
-                            <hr>
-                            <a href="#">TVs</a>
-                            <a href="#">TV wall brackets</a>
-                            <a href="#">TV stands</a>
-                            <a href="#">TV speaker brackets</a>
-                            <a href="#">Smart TV Box</a>
-                            <a href="#">Apple TV</a>
-                            <a href="#">DVD & Blue-ray</a>
-                            <a href="#">Home cinema system</a>
-                            <a href="#">Home cinema soundbar</a>
-                            <a href="#">Saoeview box</a>
-                            <a href="#">Satelite & DVD-T box</a>
-                            <a href="#">Projectors</a>
-                            <a href="#">Accessories</a>
-                            <h3>GAME CONSOLES</h3>
-                            <h3>SMART WATCHES</h3>
-                        </div>
-            
-                        <div class="column">
-                            <h3>COMPUTERS & TABLETS</h3>
-                            <hr>
-                            <a href="#">Laptop & Desktop PC</a>
-                            <a href="#">Monitors</a>
-                            <a href="#">Printers</a>
-                            <a href="#">Boardband & Networking</a>
-                            <a href="#">Android tablets</a>
-                            <a href="#">Apple Ipads</a>
-                            <a href="#">Apple Mackbooks & iMacs</a>
-                            <a href="#">Speakers</a>
-                            <a href="#">Accessories</a>
-                            <h3>CAMERAS</h3>
-                            <hr>
-                            <a href="#">Digital cameras</a>
-                            <a href="#">Dash cameras</a>
-                            <a href="#">Web caneras</a>
-                            <a href="#">Accessories</a>
-                        </div>
-            
-                        <div class="column">
-                            <h3>MOBILE DEVICES</h3>
-                            <hr>
-                            <a href="#">Mobile phones</a>
-                            <a href="#">Mobile accessories</a>
-                            <a href="#">Stationary phones</a>
-                            <h3>SOUND DEVICES</h3>
-                            <hr>
-                            <a href="#">Stereo systems</a>
-                            <a href="#">Speakers</a>
-                            <a href="#">iPods & MP3 players</a>
-                            <a href="#">Radio</a>
-                            <a href="#">Headphones</a>
-                            <a href="#">Soundbar</a>
-                            <a href="#">Accessories</a>
-                            <h3>POWER SUPPLIES & EXTENSIONS</h3>
-                            <h3>LIGHTNING</h3>
+                                <div class="row"> 
+                    
+                                    <div class="column">
+                                    <a href="#"> <h3>TV & MEDIA UNITS</h3> </a>
+                                    <hr>
+                                    <a href="#">TVs</a>
+                                    <a href="#">TV wall brackets</a>
+                                    <a href="#">TV stands</a>
+                                    <a href="#">TV speaker brackets</a>
+                                    <a href="#">Smart TV Box</a>
+                                    <a href="#">Apple TV</a>
+                                    <a href="#">DVD & Blue-ray</a>
+                                    <a href="#">Home cinema system</a>
+                                    <a href="#">Home cinema soundbar</a>
+                                    <a href="#">Saoeview box</a>
+                                    <a href="#">Satelite & DVD-T box</a>
+                                    <a href="#">Projectors</a>
+                                    <a href="#">Accessories</a>
+                                    <a href="#"> <h3>GAME CONSOLES</h3> </a>
+                                    <a href="#"> <h3>SMART WATCHES</h3> </a>
+                                    </div>
+                    
+                                    <div class="column">
+                                    <a href="#"> <h3>COMPUTERS & TABLETS</h3> </a>
+                                    <hr>
+                                    <a href="#">Laptop & Desktop PC</a>
+                                    <a href="#">Monitors</a>
+                                    <a href="#">Printers</a>
+                                    <a href="#">Boardband & Networking</a>
+                                    <a href="#">Android tablets</a>
+                                    <a href="#">Apple Ipads</a>
+                                    <a href="#">Apple Mackbooks & iMacs</a>
+                                    <a href="#">Speakers</a>
+                                    <a href="#">Accessories</a>
+                                    <a href="#"> <h3>CAMERAS</h3> </a>
+                                    <hr>
+                                    <a href="#">Digital cameras</a>
+                                    <a href="#">Dash cameras</a>
+                                    <a href="#">Web caneras</a>
+                                    <a href="#">Accessories</a>
+                                    </div>
+                    
+                                    <div class="column">
+                                    <a href="#"> <h3>MOBILE DEVICES</h3> </a>
+                                    <hr>
+                                    <a href="#">Mobile phones</a>
+                                    <a href="#">Mobile accessories</a>
+                                    <a href="#">Stationary phones</a>
+                                    <a href="#"> <h3>SOUND DEVICES</h3> </a>
+                                    <hr>
+                                    <a href="#">Stereo systems</a>
+                                    <a href="#">Speakers</a>
+                                    <a href="#">iPods & MP3 players</a>
+                                    <a href="#">Radio</a>
+                                    <a href="#">Headphones</a>
+                                    <a href="#">Soundbar</a>
+                                    <a href="#">Accessories</a>
+                                    <a href="#"> <h3>POWER SUPPLIES & EXTENSIONS</h3> </a>
+                                    <a href="#"> <h3>LIGHTNING</h3> </a>
+                                    </div>
+        
+                                    <div class="column">
+                                    <a href="#"> <h3>WASHING MACHINES & DRYERS</h3> </a>
+                                    <hr>
+                                    <a href="#">Washing machines</a>
+                                    <a href="#">Dryers</a>
+                                    <a href="#"> <h3>DISHWASHERS</h3> </a>
+                                    <a href="#"> <h3>COOLING APPLIANCES</h3> </a>
+                                    <hr>
+                                    <a href="#">Fridges</a>
+                                    <a href="#">Freezers</a>
+                                    <a href="#">Drinks collers</a>
+                                    <a href="#">Cooling fan</a>
+                                    <a href="#"> <h3>HEATING APPLIANCES</h3> </a>
+                                    <hr>
+                                    <a href="#">Heating blankets</a>
+                                    <a href="#">Heaters</a>
+                                    </div>
+                        
+                                    <div class="column">
+                                    <a href="#"> <h3>COOKING APPLIANCES, DEVICES & UTENSILS</h3> </a>
+                                    <hr>
+                                    <a href="#">Ovens</a>
+                                    <a href="#">Microwaves</a>
+                                    <a href="#">Cooking hobs</a>
+                                    <a href="#">Warming devices</a>
+                                    <a href="#">Cooking hood</a>
+                                    <a href="#">Cookware & Accessories</a>
+                                    <a href="#">Kettles</a>
+                                    <a href="#">Coffee makers</a>
+                                    <a href="#">Water filters</a>
+                                    <a href="#">Toasters</a>
+                                    <a href="#">Food procesors & mixers</a>
+                                    <a href="#">Juices & blenders</a>
+                                    <a href="#">Fryers</a>
+                                    <a href="#">Steamers</a>
+                                    </div>
+                        
+                                    <div class="column">
+                                    <a href="#"> <h3>CLEANING APPLIANCES</h3> </a>
+                                    <hr>
+                                    <a href="#">Vacuum cleaners</a>
+                                    <a href="#">Steam cleaning</a>
+                                    <a href="#">Air purifiers</a>
+                                    <a href="#">Dehumidifiers</a>
+                                    <a href="#">Cleaning accessories</a>
+                                    <a href="#"> <h3>SMART HOME DEVICES</h3> </a>
+                                    <a href="#"> <h3>GARDENING</h3> </a>
+                                    
+                                    <a href="#" style="color:#EF4236;"> <h3>NEW ARRIVALS</h3> </a>
+                                    <a href="#" style="color:#EF4236;"> <h3>PROMOTIONS</h3> </a>
+                                    </div>
+                    
+                                </div>
                         </div>
 
-                        <div class="column">
-                            <h3>WASHING MACHINES & DRYERS</h3>
-                            <hr>
-                            <a href="#">Washing machines</a>
-                            <a href="#">Dryers</a>
-                            <h3>DISHWASHERS</h3>
-                            <h3>COOLING APPLIANCES</h3>
-                            <hr>
-                            <a href="#">Fridges</a>
-                            <a href="#">Freezers</a>
-                            <a href="#">Drinks collers</a>
-                            <a href="#">Cooling fan</a>
-                            <h3>HEATING APPLIANCES</h3>
-                            <hr>
-                            <a href="#">Heating blankets</a>
-                            <a href="#">Heaters</a>
-                        </div>
-                
-                        <div class="column">
-                            <h3>COOKING APPLIANCES, DEVICES & UTENSILS</h3>
-                            <hr>
-                            <a href="#">Ovens</a>
-                            <a href="#">Microwaves</a>
-                            <a href="#">Cooking hobs</a>
-                            <a href="#">Warming devices</a>
-                            <a href="#">Cooking hood</a>
-                            <a href="#">Cookware & Accessories</a>
-                            <a href="#">Kettles</a>
-                            <a href="#">Coffee makers</a>
-                            <a href="#">Water filters</a>
-                            <a href="#">Toasters</a>
-                            <a href="#">Food procesors & mixers</a>
-                            <a href="#">Juices & blenders</a>
-                            <a href="#">Fryers</a>
-                            <a href="#">Steamers</a>
-                        </div>
-                
-                        <div class="column">
-                            <h3>CLEANING APPLIANCES</h3>
-                            <hr>
-                            <a href="#">Vacuum cleaners</a>
-                            <a href="#">Steam cleaning</a>
-                            <a href="#">Air purifiers</a>
-                            <a href="#">Dehumidifiers</a>
-                            <a href="#">Cleaning accessories</a>
-                            <h3>SMART HOME DEVICES</h3>
-                            <h3>GARDENING</h3>
-                            
-                            <h3>NEW ARRIVALS</h3>
-                            <h3>PROMOTIONS</h3>
-                        </div>
+                    </div>
+
+                </ul>      
             
-                        </div>
-                      </div>
-                    </div> 
+                     
                     
                     
             </div>
@@ -400,7 +447,7 @@
 
     <footer class="footer" style="width:100%"></section>
 
-        <div class="footer-child-img">
+        <div class="footer-child-img" >
             <a href="index.html"> <img src="assets/logo.svg"> </a>
         </div>
 
@@ -461,7 +508,9 @@
     </section>
 
 
-
+<script> src=" http://code.jquery.com/jquery-1.11.3.min.js" </script>
+<!-- This is my JS links: -->
+<script type="text/javascript" src="javascript.js"></script>
 
 </body>
 </html>
