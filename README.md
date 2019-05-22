@@ -1,2 +1,0 @@
-# PowerCity
-College Project

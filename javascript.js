@@ -1,3 +1,6 @@
+
+// THIS IS MY IMAGE GALLERY
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -16,9 +19,21 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
+// THIS IS MY PRODUCTS DROP DOWN MENU — DESKTOP
 
 function myFunction() {
   var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+// THIS IS MY PRODUCTS DROP DOWN MENU — MOBILE
+
+function secondndNavigation() {
+  var x = document.getElementById("ndNavigation");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
